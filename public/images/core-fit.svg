@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="t">
+  <title id="t">Athletic silhouette wearing The Core hoodie, fit reference illustration</title>
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#181818"/>
+      <stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg3)"/>
+  <g fill="#111111" stroke="#3a3a3a" stroke-width="1.5">
+    <ellipse cx="400" cy="150" rx="55" ry="65"/>
+    <path d="M300 220 Q400 190 500 220 L540 320 Q560 430 540 560 L500 900 L440 900 L430 600 L400 600 L370 900 L310 900 L260 560 Q240 430 260 320 Z"/>
+    <path d="M300 230 L200 350 L215 430 L280 350 Z"/>
+    <path d="M500 230 L600 350 L585 430 L520 350 Z"/>
+  </g>
+  <path d="M340 250 Q400 275 460 250" fill="none" stroke="#4a4a4a" stroke-width="1.5"/>
+  <text x="345" y="330" font-family="Arial, sans-serif" font-size="12" letter-spacing="2" fill="#7a7a7a">NDY 1986</text>
+</svg>

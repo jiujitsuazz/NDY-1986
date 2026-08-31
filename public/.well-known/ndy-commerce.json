@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ndy1986.com/.well-known/ndy-commerce.json",
+  "_notice": "This is an NDY-defined discovery document, not an official or standardised protocol. It exists to make it easier for AI shopping agents and integrators to find NDY 1986's structured commerce endpoints today, and can be superseded by a real agent-commerce standard later without changing the underlying API.",
+  "brand": {
+    "name": "NDY 1986",
+    "meaning": "NOT DEAD YET",
+    "url": "https://ndy1986.com"
+  },
+  "version": "0.1.0",
+  "endpoints": {
+    "products": "/api/products",
+    "product": "/api/products/{id}",
+    "checkout": "/api/checkout",
+    "documentation": "/agents"
+  },
+  "capabilities": {
+    "search_products": { "status": "available", "endpoint": "GET /api/products?q={query}" },
+    "get_product_details": { "status": "available", "endpoint": "GET /api/products/{id}" },
+    "check_stock": { "status": "available", "note": "Included in the product resource's sizes[] array." },
+    "get_sizing_information": { "status": "available", "note": "Included in the product resource; see data/sizeGuide.ts equivalent fields." },
+    "calculate_delivery": { "status": "available", "note": "Included in the product resource's shipping object." },
+    "get_returns_policy": { "status": "available", "note": "Included in the product resource's returns object." },
+    "create_cart": { "status": "not_integrated" },
+    "add_to_cart": { "status": "not_integrated" },
+    "checkout": { "status": "placeholder", "endpoint": "POST /api/checkout", "note": "No payment provider is connected yet; this endpoint responds honestly rather than simulating a successful order." },
+    "track_order": { "status": "not_integrated" },
+    "start_return": { "status": "not_integrated", "note": "Contact hello@ndy1986.com in the meantime." }
+  },
+  "contact": "hello@ndy1986.com"
+}
