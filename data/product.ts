@@ -53,9 +53,10 @@ export const coreHoodie: Product = {
     },
     {
       id: "core-detail-chest",
-      src: "/images/core-detail-chest.svg",
-      alt: "Close detail of minimal NDY 1986 left-chest branding on The Core hoodie",
+      src: "/images/core-detail-chest.jpg",
+      alt: "Close-up of The Core hoodie's hood, drawstrings, and minimal NDY 1986 left-chest branding",
       role: "detail",
+      objectPosition: "75% center",
     },
     {
       id: "core-fit",
