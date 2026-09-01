@@ -39,6 +39,8 @@ export interface ProductImage {
   alt: string;
   /** Used to distinguish gallery role for layout/agent purposes. */
   role: "primary" | "detail" | "fit" | "fabric";
+  /** CSS object-position, for photography whose focal point isn't centred. Defaults to "center". */
+  objectPosition?: string;
 }
 
 export interface ShippingInfo {

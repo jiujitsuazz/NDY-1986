@@ -18,7 +18,7 @@ const line: CartLine = {
   quantity: 1,
   unitPrice: 95,
   currency: "GBP",
-  image: "/images/core-front.svg",
+  image: "/images/core-front.jpg",
 };
 
 function installFakeLocalStorage() {

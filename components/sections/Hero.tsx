@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CinematicPlaceholder } from "@/components/brand/CinematicPlaceholder";
+import { HeroImage } from "@/components/brand/HeroImage";
 
 interface HeroProps {
   eyebrow: string;
@@ -15,7 +15,7 @@ export function Hero({ eyebrow, heading, subheading, primaryCta, secondaryCta, c
     <section
       className={`relative flex ${compact ? "min-h-[70vh]" : "min-h-[100svh]"} items-end overflow-hidden border-b border-ndy-charcoal`}
     >
-      <CinematicPlaceholder variant="hero" />
+      <HeroImage />
       <div className="container-ndy relative z-10 pb-16 pt-40 sm:pb-24">
         <p className="mb-4 text-xs tracking-widest2 text-ndy-mist sm:text-sm">{eyebrow}</p>
         <h1 className="text-balance text-6xl leading-[0.95] text-ndy-bone sm:text-8xl lg:text-9xl">

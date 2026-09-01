@@ -15,6 +15,7 @@ export function CoreShowcase() {
             fill
             sizes="(min-width: 1024px) 45vw, 100vw"
             className="object-cover"
+            style={{ objectPosition: primaryImage.objectPosition ?? "center" }}
             priority={false}
           />
         </div>

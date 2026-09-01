@@ -17,6 +17,7 @@ export function ProductGallery({ images }: { images: ProductImage[] }) {
           fill
           sizes="(min-width: 1024px) 50vw, 100vw"
           className="object-cover"
+          style={{ objectPosition: active.objectPosition ?? "center" }}
           priority
         />
       </div>
@@ -32,7 +33,14 @@ export function ProductGallery({ images }: { images: ProductImage[] }) {
               image.id === active.id ? "ring-2 ring-ndy-bone" : "ring-1 ring-ndy-graphite hover:ring-ndy-mist"
             }`}
           >
-            <Image src={image.src} alt="" fill sizes="120px" className="object-cover" />
+            <Image
+              src={image.src}
+              alt=""
+              fill
+              sizes="120px"
+              className="object-cover"
+              style={{ objectPosition: image.objectPosition ?? "center" }}
+            />
           </button>
         ))}
       </div>

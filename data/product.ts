@@ -47,9 +47,10 @@ export const coreHoodie: Product = {
   images: [
     {
       id: "core-front",
-      src: "/images/core-front.svg",
-      alt: "NDY 1986 The Core hoodie in black, front view, athletic fit, minimal left-chest branding",
+      src: "/images/core-front.jpg",
+      alt: "Man wearing the NDY 1986 Core hoodie in black, seated, with minimal NDY 1986 left-chest branding visible",
       role: "primary",
+      objectPosition: "80% 30%",
     },
     {
       id: "core-detail-chest",

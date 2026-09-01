@@ -118,10 +118,11 @@ Nothing else hardcodes product facts. The PDP, the homepage sections, the JSON-L
 
 ## 7. How to replace imagery
 
-All current imagery is **placeholder**, built as replaceable components/files so real campaign photography can drop in without touching layout code:
+Imagery is built as replaceable components/files so real campaign photography can drop in without touching layout code:
 
-- **Cinematic backgrounds** (hero, brand story, mission sections): `components/brand/CinematicPlaceholder.tsx` — pure CSS gradients + SVG grain, no image dependency. Swap its usage for a `next/image` (or `<video>`) pointed at a file in `public/images/campaign/`.
-- **Product imagery**: `public/images/core-*.svg` — flat technical illustrations referenced from `data/product.ts` → `images[]`. Replace the files and update the `src` paths; everything downstream (PDP gallery, JSON-LD `image` array, Open Graph image) updates automatically since it all reads from the same product record.
+- **Hero**: `components/brand/HeroImage.tsx` — real photography (`public/images/core-front.jpg`), rendered with `next/image` and a gradient scrim for text contrast. Replace the file and adjust `object-[70%_center]` if the new photo's focal point differs.
+- **Brand story / mission backgrounds**: still placeholder — `components/brand/CinematicPlaceholder.tsx` (pure CSS gradients + SVG grain, no image dependency) used in `app/our-story/page.tsx` and `components/sections/MissionSection.tsx`. Swap either usage for a `next/image` (or `<video>`) once photography exists for those sections.
+- **Product imagery**: `public/images/core-*` referenced from `data/product.ts` → `images[]`. The primary front-view shot is a real photo (`core-front.jpg`); the detail/fit/fabric shots are still flat SVG placeholders pending more photography. Replace files and update `src` paths there; everything downstream (PDP gallery, JSON-LD `image` array, Open Graph image) updates automatically since it all reads from the same product record.
 
 ---
 
