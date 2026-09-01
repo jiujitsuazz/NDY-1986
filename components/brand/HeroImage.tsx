@@ -9,7 +9,7 @@ export function HeroImage() {
   return (
     <div className="absolute inset-0" aria-hidden="true">
       <Image
-        src="/images/core-front.jpg"
+        src="/images/hero-campaign.jpg"
         alt=""
         fill
         priority
