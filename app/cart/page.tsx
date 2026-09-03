@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useCart } from "@/components/commerce/CartProvider";
 
 export default function CartPage() {
-  const { cart, subtotal, removeLine, setQuantity } = useCart();
+  const { cart, removeLine, setQuantity } = useCart();
 
   if (cart.lines.length === 0) {
     return (
@@ -63,15 +63,13 @@ export default function CartPage() {
                 </button>
               </div>
             </div>
-            <p className="text-ndy-bone">
-              £{(line.unitPrice * line.quantity).toFixed(2)}
-            </p>
+            <p className="text-ndy-bone">£??</p>
           </li>
         ))}
       </ul>
 
       <div className="mt-8 flex flex-col items-end gap-4">
-        <p className="text-lg text-ndy-bone">Subtotal: £{subtotal.toFixed(2)}</p>
+        <p className="text-lg text-ndy-bone">Subtotal: £??</p>
         <p className="text-xs text-ndy-ash">Shipping and taxes calculated at checkout.</p>
         <Link
           href="/checkout"

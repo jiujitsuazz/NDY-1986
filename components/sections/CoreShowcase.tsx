@@ -33,7 +33,7 @@ export function CoreShowcase() {
             href="/the-core"
             className="mt-10 inline-flex items-center justify-center border border-ndy-bone bg-ndy-bone px-8 py-4 text-sm font-medium tracking-label text-ndy-black transition hover:bg-transparent hover:text-ndy-bone"
           >
-            SHOP THE CORE — £{coreHoodie.offer.price}
+            SHOP THE CORE — £??
           </Link>
         </div>
       </div>

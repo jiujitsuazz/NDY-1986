@@ -11,7 +11,7 @@ import { useCart } from "@/components/commerce/CartProvider";
  * Stripe integration points" for what replaces this.
  */
 export default function CheckoutPage() {
-  const { cart, subtotal } = useCart();
+  const { cart } = useCart();
   const [message, setMessage] = useState<string | null>(null);
   const loading = message === null && cart.lines.length > 0;
 
@@ -46,7 +46,7 @@ export default function CheckoutPage() {
   return (
     <div className="container-ndy max-w-xl py-16 sm:py-24">
       <h1 className="text-4xl text-ndy-bone">CHECKOUT</h1>
-      <p className="mt-4 text-ndy-fog">Subtotal: £{subtotal.toFixed(2)}</p>
+      <p className="mt-4 text-ndy-fog">Subtotal: £??</p>
 
       <div className="mt-8 border border-ndy-graphite p-6">
         <p className="text-xs tracking-widest2 text-ndy-ash">PAYMENT</p>

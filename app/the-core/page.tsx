@@ -59,9 +59,7 @@ export default function TheCorePage() {
         <div>
           <p className="text-xs tracking-widest2 text-ndy-mist">{product.brand} — {product.brandMeaning}</p>
           <h1 className="mt-3 text-5xl text-ndy-bone sm:text-6xl">{product.name.toUpperCase()}</h1>
-          <p className="mt-4 text-2xl text-ndy-bone">
-            £{product.offer.price.toFixed(2)} {product.offer.currency}
-          </p>
+          <p className="mt-4 text-2xl text-ndy-bone">£??</p>
 
           <p className="mt-6 max-w-md text-base text-ndy-fog">{product.description}</p>
 
